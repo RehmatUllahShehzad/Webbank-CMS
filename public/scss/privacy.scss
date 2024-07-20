@@ -1,0 +1,141 @@
+.banner_sec {
+  position: relative;
+  width: 100%;
+  min-height: 378px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  .blue_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.5;
+    background-color: #013068;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #a5d9c5;
+      opacity: 0.6;
+      width: 100%;
+      height: 12.6%;
+      content: "";
+    }
+  }
+  h2 {
+    @include font-applying(56px, $font_text, 500, normal);
+    color: $bann-heading;
+    z-index: 3;
+    min-width: 430px;
+    text-align: center;
+  }
+  p {
+    @include font-applying(18px, $font_text, 400, normal);
+    color: $bann-heading;
+    max-width: 430px;
+    z-index: 3;
+    text-align: center;
+  }
+}
+.text_container {
+  width: 100%;
+  height: auto;
+  padding: 115px 0 80px;
+  word-break: break-word;
+  white-space: wrap;
+  @include font-applying(16px, $font_text, 400, normal);
+  color: $text_color;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include font-applying(32px, $font_text, 400, normal);
+    color: $primary_color;
+    margin-bottom: 20px;
+  }
+  strong{
+    color: $primary_color;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  span {
+    @include font-applying(16px, $font_text, 700, normal);
+  }
+  a {
+      font-weight: 700;
+      text-decoration: underline;
+      color: $secondary_color;
+  }
+  em,
+  kbd {
+    font-weight: 700;
+  }
+  ol{
+      li{
+          padding-left: 10px;
+      }
+  }
+}
+.table-wrapper {
+    margin-bottom: 80px;
+  .table {
+    table-layout: fixed;
+    border: 1px solid #000;
+    caption {
+      p {
+        text-align: end;
+      }
+    }
+    thead th {
+      color: #000;
+      @include font-applying(20px, $font_text, 400, normal);
+      &:first-child {
+        background: #74747b;
+        color: white;
+        @include font-applying(30px, $font_text, 600, normal);
+        vertical-align: middle;
+      }
+    }
+    tbody th {
+      &:first-child {
+        background: #74747b;
+        color: white;
+        @include font-applying(18px, $font_text, 600, normal);
+        vertical-align: top;
+      }
+    }
+    td {
+      color: #000;
+      @include font-applying(18px, $font_text, 400, normal);
+    }
+  }
+}
+
+
+// compliance page 
+.compliance-items{
+  padding: 70px 0px;
+  .accordion-item{
+    border: 0px;
+    margin-bottom: 15px;
+    .accordion-button{
+      background: $primary_color;
+      color: $white;
+      border-radius: 0px;
+      &:after{
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+      }
+    }
+  }
+}

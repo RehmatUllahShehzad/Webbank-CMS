@@ -1,0 +1,33 @@
+.about_web {
+  h2 {
+    @include font-applying(48px, $font_text, 400, normal);
+    color: $primary_color;
+  }
+}
+.top-info-border{
+  border: 1px solid $primary_color;
+  border-radius: 20px;
+}
+.bank-adress {
+  width: 100%;
+  height: auto;
+  padding: 70px 70px 45px;
+  border: 1px solid $secondary_color;
+  border-radius: 20px;
+  h3 {
+    @include font-applying(48px, $font_text, 400, normal);
+    color: $primary_color;
+    margin-bottom: 25px;
+  }
+  p{
+    @include font-applying(16px, $font_text, 400, normal);
+    color: $text_color;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  .bank-adress{
+    padding: 40px 40px 35px;
+  }
+}

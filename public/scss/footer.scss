@@ -1,0 +1,61 @@
+footer{
+    background-color: $primary_color;
+    padding: 101px 0;
+    color: white;
+
+    h2{
+        @include font-applying(60px, $font_text, 300, normal);
+        margin-bottom: 10px;
+
+        a{
+            color: white;
+            text-decoration: none;
+
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    h3{
+        @include font-applying(22px, $font_text, normal, normal);
+        margin-bottom: 18px;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+
+        li{
+            margin-bottom: 5px;
+            a{
+                color: #DDDDDD;
+                text-decoration: none;
+                font-size: 14px;
+
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    span{
+        color: rgba(255, 255, 255, 0.4);
+    }
+    .social-links{
+        a{
+            font-size: 21px;
+            color: white;
+            margin-right: 22px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .footer-logo{
+        margin-bottom: 59px;
+    }
+}
+.footer-container{
+    width: 100%;
+    padding: 0 20px;
+}

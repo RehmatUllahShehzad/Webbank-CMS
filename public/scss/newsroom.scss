@@ -1,0 +1,103 @@
+.newsroom-main{
+    margin: 110px 0 0;
+
+    .news-card{
+        margin-bottom: 75px; 
+    }
+}
+.newsroom-head{
+    h2{
+        @include font-applying(48px, $font_text, normal);
+        color: $primary_color;
+        margin-bottom: 35px;
+    }
+}
+.newsroom-featured{
+    margin: 0 0 110px;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: stretch;
+
+    .news-card{
+        margin-bottom: 0;
+        width: 35.515%;
+        padding: 20px 30px 50px 50px;
+
+        .read-more{
+            a{
+                padding-right: 0;
+            }
+        }
+
+        p{
+            margin-top: 25px;
+        }
+    }
+}
+.newsroom-featured-img{
+    width: 64.485%;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.newsroom-detail{
+    max-width: 100%;
+    width: 1000px;
+    margin: 110px auto 80px;
+    .img-fluid{
+        width: 100%;
+    }
+
+    h1{
+        color: $primary_color;
+        @include font-applying(32px, $font_text, normal);
+        margin-bottom: 8px;
+    }
+    h2{
+        color: $primary_color;
+        @include font-applying(28px, $font_text, normal);
+        margin-bottom: 10px;
+    }
+    h3{
+        color: $primary_color;
+        @include font-applying(26px, $font_text, normal);
+        margin-bottom: 10px;
+    }
+    h4{
+        color: $primary_color;
+        @include font-applying(24px, $font_text, normal);
+        margin-bottom: 10px;
+    }
+    h5{
+        color: $primary_color;
+        @include font-applying(20px, $font_text, normal);
+        margin-bottom: 10px;
+    }
+
+    img{
+        border-radius: 10px;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 35px;
+    }
+    span{
+        color: #908E8C;
+        font-size: 14px;
+    }
+    ul, ol{
+        padding-left: 0;
+        margin-bottom: 35px;
+    }
+    a{
+        color: $text_color;
+        font-weight: 500;
+    }
+}

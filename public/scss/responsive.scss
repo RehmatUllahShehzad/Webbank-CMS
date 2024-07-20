@@ -1,0 +1,574 @@
+@include xs{ 
+    header {
+        .navbar {
+            min-height: auto;
+        }
+        .navbar-nav{
+            padding-top: 30px;
+
+            .nav-item { 
+                margin-left: 0;
+                margin-bottom: 15px;
+
+                .nav-link{
+                    display: inline-block;
+                    position: relative;
+                    font-size: 16px;
+                }
+
+                .dropdown-toggle svg {
+                    width: 14px;
+                }
+            }
+        }
+    }
+    #header-btn{
+        .navbar{
+            min-height: auto;
+            .navbar-nav {
+                padding-top: 30px;
+
+                .nav-item { 
+                    margin-left: 0;
+                    margin-bottom: 15px;
+                }
+                .nav-link{
+                    display: inline-block;
+                    position: relative;
+                    font-size: 16px;
+                }
+            }
+        }
+        .header-btn .general-btn {
+            min-width: 100px; 
+            height: 30px;
+            margin-left: 5px;
+            font-size: 11px;
+        }
+        .navbar-toggler { 
+            line-height: 0.6;
+        }
+    }
+    header .header-btn {
+        margin-left: 30px;
+        position: absolute;
+        top: 31px;
+        right: 35px;
+        transform: translateY(-50%);
+        margin-left: 0; 
+    }
+    .general-btn{
+        min-width: 140px;
+    }
+    .home-banner { 
+        min-height: 450px !important;
+    }
+    .home-banner-text { 
+        width: 360px;
+        min-height: 450px;
+        padding: 50px 20px;
+        background-color: rgba(255,255,255,0.7);
+
+        h1{
+            font-size: 38px;
+        }
+        a{
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .offer-card-main{
+        max-width: 310px;
+        margin: 0 auto;
+    }
+    .offer-card { 
+        // padding: 25px 20px 15px; 
+        margin: 0 10px;
+
+        h3{
+            font-size: 28px;
+        }
+    }
+    .home-head{
+        margin-bottom: 35px;
+        h2 {
+            font-size: 32px;
+        }
+    }
+    .swap-main {
+        margin: 60px 0 0;
+    }
+    .swap-img{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 20px;
+        height: 280px;
+        img{
+            width: 100%;
+        }
+    }
+    .swap-text {
+        width: 400px;
+        max-width: 100%;
+        float: none !important;
+        margin: 0 auto 60px; 
+        h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .general-btn{
+            margin-top: 15px;
+        }
+    }
+    .swap-main .col-md-12 .row.align-items-center:nth-child(even) .col-md-6:first-child{
+        order: 0;
+        padding-left: 15px;
+    }
+    .swap-main .col-md-12 .row.align-items-center:nth-child(odd) .col-md-6:first-child {
+        padding-right: 15px;
+    }
+    .our-news-wrapper { 
+        padding: 0;
+        h3 {
+            font-size: 26px;
+        }
+    }
+    .news-card{
+        margin: 0 10px 50px;
+    }
+    .news-card-main{
+        // max-width: 100%;
+        width: 300px !important;
+        margin: 0 auto;
+    }
+    footer{
+        padding: 50px 0 30px; 
+        .footer-logo {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 42px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        ul {
+            margin-bottom: 50px;
+            li a {  
+                br{
+                    display: none;
+                }
+            }
+        }
+        .social-links{
+            margin-top: -25px;
+            // a {
+            //     font-size: 18px;
+            //     color: white;
+            //     margin-right: 15px;
+            // }
+        
+        }
+        .footer-container{
+            .col-md-7{
+                .row{
+                    .col-md-4{
+                        &:last-child{
+                            text-align: center;
+
+                            h3{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .newsroom-head h2 {
+        font-size: 32px;
+    } 
+    .newsroom-featured-img {
+        width: 100%;
+    }
+    .newsroom-featured .news-card { 
+        width: 100%;
+        padding: 20px 25px 35px 25px;
+        margin: 0 0;
+    }
+    .newsroom-main {
+        margin: 50px 0 0;
+
+        .news-card-main{
+            .news-card{
+                width: 300px;
+                max-width: 100%;
+                margin: 0 auto 50px;
+            }
+        }
+    }
+    .newsroom-featured {
+        margin: 0 0 50px
+    }
+    .newsroom-main{
+        .news-card{
+            .news-card-img{
+                height: 170px;
+            }
+        }
+    }
+    .banner_sec { 
+        min-height: 300px;
+
+        h2{
+            font-size: 40px;
+        }
+    }    
+    .newsroom-detail{
+        margin: 50px auto 50px;
+
+        h1 { 
+            font-size: 26px;
+        }
+    }
+}
+@include sm{
+    header {
+        .navbar {
+            min-height: auto;
+        }
+        .navbar-nav{
+            padding-top: 30px;
+
+            .nav-item { 
+                margin-left: 0;
+                margin-bottom: 15px;
+
+                .nav-link{
+                    display: inline-block;
+                    position: relative;
+                    font-size: 16px;
+                }
+
+                .dropdown-toggle svg {
+                    width: 14px;
+                }
+            }
+        }
+    }
+    #header-btn{
+        .navbar{
+            min-height: auto;
+            .navbar-nav {
+                padding-top: 30px;
+
+                .nav-item { 
+                    margin-left: 0;
+                    margin-bottom: 15px;
+                }
+                .nav-link{
+                    display: inline-block;
+                    position: relative;
+                    font-size: 16px;
+                }
+            }
+        }
+        .header-btn .general-btn {
+            min-width: 120px; 
+            margin-left: 10px;
+        }
+    }
+    header .header-btn {
+        margin-left: 30px;
+        position: absolute;
+        top: 31px;
+        right: 45px;
+        transform: translateY(-50%);
+    }
+    .container{
+        max-width: 540px;
+    }
+    .general-btn{
+        min-width: 183px;
+    }
+    .home-banner { 
+        min-height: 500px !important;
+    }
+    .home-banner-text { 
+        min-height: 500px;
+        padding: 50px 25px;
+        background-color: rgba(255,255,255,0.5);
+
+        h1{
+            font-size: 44px;
+        }
+    }
+
+    .offer-card { 
+        padding: 25px 20px 15px; 
+        margin: 0 10px;
+
+        h3{
+            font-size: 28px;
+        }
+    }
+    .home-head h2 {
+        font-size: 36px;
+    }
+    .swap-main {
+        margin: 80px 0 0;
+    }
+    .swap-img{
+        width: 500px;
+        margin: 0 auto 30px;
+    }
+    .swap-text {
+        width: 500px;
+        float: none;
+        margin: 0 auto 65px; 
+        h3 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        .general-btn{
+            margin-top: 15px;
+        }
+    }
+    .swap-main .col-md-12 .row.align-items-center:nth-child(even) .col-md-6:first-child{
+        order: 0;
+        padding-left: 15px;
+    }
+    .swap-main .col-md-12 .row.align-items-center:nth-child(odd) .col-md-6:first-child {
+        padding-right: 15px;
+    }
+    .our-news-wrapper { 
+        padding: 0;
+        h3 {
+            font-size: 26px;
+        }
+    }
+    .news-card{
+        margin: 0 10px 50px;
+    }
+    footer{
+        padding: 50px 0 30px;
+        .container{
+            max-width: 540px;
+        }
+        .footer-logo {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 42px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        ul {
+            margin-bottom: 50px;
+            li a {  
+                br{
+                    display: none;
+                }
+            }
+        }
+        .social-links{
+            margin-top: -25px;
+            // a {
+            //     font-size: 18px;
+            //     color: white;
+            //     margin-right: 15px;
+            // }
+        
+        }
+        .footer-container{
+            .col-md-7{
+                .row{
+                    .col-md-4{
+                        &:last-child{
+                            text-align: center;
+
+                            h3{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .newsroom-head h2 {
+        font-size: 32px;
+    } 
+    .newsroom-featured-img {
+        width: 100%;
+    }
+    .newsroom-featured .news-card { 
+        width: 100%;
+        padding: 20px 25px 35px 25px;
+        margin: 0 0;
+    }
+    .newsroom-main {
+        margin: 50px 0 0;
+
+        .news-card-main{
+            .news-card{
+                width: 47%;
+                margin: 0 0 50px;
+            }
+        }
+    }
+    .newsroom-featured {
+        margin: 0 0 50px
+    }
+    .newsroom-main{
+        .news-card{
+            .news-card-img{
+                height: 170px;
+            }
+        }
+    }
+    .banner_sec{
+        min-height: 350px; 
+        h2 {
+            font-size: 48px;
+        }    
+    }
+    .newsroom-detail{
+        margin: 75px auto 60px;
+    }
+}
+@include md{
+    .container{
+        max-width: 720px;
+    }
+    #header-btn{
+        .navbar{
+            min-height: auto;
+            .navbar-nav {
+                padding-top: 30px;
+
+                .nav-item { 
+                    margin-left: 0;
+                    margin-bottom: 15px;
+                }
+                .nav-link{
+                    display: inline-block;
+                    position: relative;
+                    font-size: 16px;
+                }
+            }
+        }
+        .header-btn .general-btn {
+            min-width: 120px; 
+            margin-left: 10px;
+        }
+    }
+    header .header-btn {
+        margin-left: 30px;
+        position: absolute;
+        top: 34px;
+        right: 45px;
+        transform: translateY(-50%);
+    }
+    .general-btn{
+        min-width: 183px;
+    }
+    .home-banner-text { 
+        padding: 50px 25px;
+        background-color: rgba(255,255,255,0.5);
+
+        h1{
+            font-size: 45px;
+        }
+    }
+    .offer-card {
+        width: 31.5%; 
+        padding: 35px 20px 25px; 
+
+        h3{
+            font-size: 28px;
+        }
+    }
+    .home-head h2 {
+        font-size: 40px;
+    }
+    .swap-text {
+        padding-left: 25px;
+        h3 {
+            font-size: 38px;
+        }
+    }
+    .our-news-wrapper { 
+        padding: 0;
+        h3 {
+            font-size: 26px;
+        }
+    }
+    footer{
+        padding: 80px 0;
+        .container{
+            max-width: 100%;
+        }
+        h2 {
+            font-size: 42px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        ul li a { 
+            font-size: 13px;
+            br{
+                display: none;
+            }
+        }
+        .social-links a {
+            font-size: 18px;
+            color: white;
+            margin-right: 10px;
+        }
+    }
+    .newsroom-head h2 {
+        font-size: 36px;
+    } 
+    .newsroom-featured-img {
+        width: 60%;
+    }
+    .newsroom-featured .news-card { 
+        width: 40%;
+        padding: 20px 25px 50px 25px;
+    }
+    .newsroom-main {
+        margin: 70px 0 0;
+    }
+    .newsroom-featured {
+        margin: 0 0 70px
+    }
+    .newsroom-main{
+        .news-card{
+            .news-card-img{
+                height: 170px;
+            }
+        }
+    }
+}
+@include lg{
+    .container{
+        max-width: 960px;
+    }
+    #header-btn{
+        .navbar .nav-item {
+            margin-left: 30px;
+        }
+        .header-btn .general-btn {
+            min-width: 120px; 
+            margin-left: 10px;
+        }
+    }
+    .news-card h3 {
+        font-size: 30px;
+    }
+    .newsroom-head h2 {
+        font-size: 38px;
+    }    
+}

@@ -1,0 +1,546 @@
+.page-wrap{
+    padding: 80px 0px;
+}
+// brand partners page style 
+.top-info-wrap{
+    margin: 50px 0px;
+    .top-info-content{
+        h1{
+            @include font-applying(56px, $font_text, 500, normal);
+            line-height: 65px;
+            color: $primary_color;
+        }
+        p{
+            @include font-applying(16px, $font_text, normal, normal);
+            line-height:26px;
+            color: $text_color;
+            margin-top: 20px;
+        }
+        ul{
+            margin-top: 20px;
+            li{
+                @include font-applying(16px, $font_text, normal, normal);
+                line-height: 28px;
+            }
+        }
+        .top-info-button{
+            margin-top: 40px;
+        }
+    }
+    .top-info-image{
+        border-radius: 20px;
+        overflow: hidden;
+        height: 550px;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.brand-partners-wrap{
+    padding-top: 100px;
+    h4{
+        @include font-applying(48px, $font_text, normal, normal);
+        line-height: 58px;
+        color: $primary_color;
+        text-align: center;
+    }
+    .brand-partnes-listing{
+        margin-top: 50px;
+        .brand-partner{
+            margin-bottom: 30px;
+            .partner-img{   
+                height: 120px;
+                border: 1px solid $theme_border;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                padding: 20px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            .learn-btn{
+                text-align: center; 
+                margin-top: 10px;
+                a{
+                    @include font-applying(11px, $font_text, normal, normal);
+                    line-height: 14px;
+                    color: $text_color;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+// deposit page styling
+
+.deposit-pros-wrap, .bottom-pros-wrap{
+    padding: 60px 0px;
+    .despoit-pro-wrap-inner, .bottom-pros-inner{
+        a{
+            text-decoration: none;
+        }
+    }
+}
+a{
+    text-decoration: none;
+}
+.deposit-item, .bottom-item, .deposit-detail-widget{
+    cursor: pointer;
+    overflow: hidden;
+    height: 100%;
+    .deposit-item-inner, .bottom-item-inner, .widget-inner{
+        text-align: center;
+        border: 2px solid $secondary_color;
+        border-radius: 15px 15px 0px 0px;
+        border-bottom: 0px;
+        transition: all .3s ease;
+        padding: 40px;
+        height: calc(100% - 46px);
+        h4{
+            @include font-applying(32px, $font_text, normal, normal);
+            color: $primary_color;
+            margin-top: 40px
+        }
+        p{
+            @include font-applying(16px, $font_text, normal, normal);
+            line-height: 28px;
+            color: $text_color;
+        }
+        svg{
+            height: 48px;
+        }
+    }
+    
+    .learn-more-btn{
+        height: 46px;
+        background-color: $secondary_color;
+        border-radius: 0px 0px 15px 15px;
+        transition: all .3s ease;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &:hover{
+        .deposit-item-inner{
+            border-color: $primary_color;
+        }
+        .learn-more-btn{
+            background-color: $primary_color;
+        }
+        .icon{
+            svg{
+                path {
+                    stroke: $primary_color;
+                }
+            }
+        }
+    }
+    &.active{
+        .deposit-item-inner{
+            border-color: $primary_color
+        }
+        .learn-more-btn{
+            background-color: $primary_color;
+        }
+        .icon{
+            svg{
+                path {
+                    stroke: $primary_color;
+                }
+            }
+        }
+    }
+}
+.bottom-item, .deposit-detail-widget, .deposit-detail-widget{   
+    .bottom-item-inner, .widget-inner{
+        border: 2px solid $primary_color;
+        border-bottom: 0px;
+        .icon{
+            svg{
+                path{
+                    stroke: $primary_color;
+                }
+            }
+        }
+    }
+    .learn-more-btn{
+        height: 46px;
+        background-color: $primary_color;
+        color: $white;
+    }
+    &:hover{
+        .bottom-item-inner, .widget-inner{
+            border-color: $secondary_color;
+        }
+        .learn-more-btn{
+            background-color: $secondary_color;
+        }
+        .icon{
+            svg{
+                path{
+                    stroke: $secondary_color;
+                }
+            }
+        }
+    }
+}
+.deposit-detail-widget{
+    height: auto;
+}
+
+// bottom banner scss 
+.bottom-banner{
+    height: 530px;
+    .bottom-banner-inner{
+        height: 100%;
+        .banner-img{
+            position: relative;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .bottom-banner-content{
+                position: absolute;
+                top: 0%;
+                background-color: #01306a80;
+                display: flex;
+                justify-content: center;
+                break-after: column;
+                align-items: center;
+                flex-flow: column;
+                width: 100%;
+                height: 100%;
+                padding: 30px;
+                h2{
+                    @include font-applying(48px, $font_text, bold, normal);
+                    line-height: 58px;
+                    color: $white;
+                    text-align: center;
+                }
+                p{
+                    @include font-applying(16px, $font_text, normal, normal);
+                    line-height: 28px;
+                    color: $white;
+                    margin-top: 10px;
+                    text-align: center;
+                }
+                .learn-more{
+                    margin-top: 50px;
+                    a{
+                        width: 208px;
+                        height: 46px;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: $white;
+                        border: 2px solid white;
+                        color: $theme_black;
+                        border-radius: 4px;
+                        transition: all .3s ease;
+                        -moz-backdrop-filter: blur( 1.5px );
+                        backdrop-filter: blur( 1.5px );
+                        -webkit-backdrop-filter: blur( 1.5px );
+
+                        &:hover{
+                            background: #ffffff45;
+                            color: $secondary_color;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.deposit-details-wrap{
+    padding: 60px 0px;
+    .desposit-detail-content{
+        .title{
+            h4{
+                @include font-applying(32px, $font_text, normal, normal);
+                line-height: 38px;
+                color: $primary_color;
+            }
+        }
+        .details{
+            margin-top: 20px;
+            h5{
+                @include font-applying(24px, $font_text, 500, normal);
+                line-height: 29px;
+                color: $primary_color
+            }
+            ul{
+                li{
+                    @include font-applying(16px, $font_text, normal, normal);
+                    line-height: 26px;
+                    list-style-type: disc;
+                }
+            }
+            p{
+                @include font-applying(16px, $font_text, normal, normal);
+                line-height: 26px;
+                a{
+                    color: $primary_color;
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.forms-info-wrap{
+    .forms-info-list{
+        .form-info-item{
+            // height: 57px;
+            height: 62.5px;
+            margin-bottom: 15px;
+            button{
+                width: 100%;
+                height: 100%;
+                background-color: $primary_color;
+                color: $white;
+                text-align: left;
+                border-radius: 0px;
+                box-shadow: none;
+                outline: none;
+                border: 1px solid $primary_color;
+                transition: all .3s ease;
+                @include font-applying(20px, $font_text, normal, normal);
+                line-height: 24px;
+                
+                &:hover{
+                    background-color: transparent;
+                    color: $primary_color;
+                }
+            }
+        }
+    }
+}
+.desclaimer-modal {
+    width: 100%;
+    justify-content: center; 
+    background: #00000036;
+    .modal-content{
+        border: 0px;
+    }
+    .modal-dialog {
+        max-width: 600px;
+        margin: 1.75rem auto;
+        box-shadow: rgb(0 0 0 / 58%) 0px 0px 15px;
+        .modal-header{
+            h5{
+            @include font-applying(16px, $font_text, normal, normal);
+            line-height: 22px;
+            }
+        }
+        .modal-footer{
+             .btn-secondary{
+                    background-color: $primary_color;
+                    color: $white;
+                    min-width: 115px;
+                    transition: all .3s ease;
+                    &:hover{
+                    background-color: transparent;
+                    color: $primary_color;
+                }
+             }
+             .btn-primary{
+                background-color: transparent;
+                color: $primary_color;
+                border: 1px solid $primary_color;
+                min-width: 115px;
+                transition: all .3s ease;
+                &:hover{
+                    background-color: $primary_color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+.rates-detail-wrap{
+    padding:80px 0px;
+    table{
+        caption-side: top;
+        caption{
+            @include font-applying(56px, $font_text, 500, normal);
+            line-height: 65px;
+            color: $primary_color;
+            margin-bottom: 20px;
+        }
+        thead{
+            tr{
+                border-bottom: 10px solid transparent;
+                th{
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 65px;
+                    border: 0px;
+                    text-align: center;
+                    color: $primary_color;
+                }
+            }
+        }
+        tbody{
+            tr{
+                border-bottom: 10px solid white;
+                height: 50px;
+                line-height: 50px;
+                td{
+                    text-align: center;
+                    box-shadow: none;
+                    font-size: 18px;
+                    width: 50%;
+                    &:nth-child(odd){
+                        background-color: $primary_color;
+                        color: $white;
+                    }
+                    &:nth-child(even){
+                        background-color: #F2F2F2;
+                        color: $primary_color;
+                    }
+                }
+            }
+        }
+    }
+    .fee-info-table{
+        margin-top: 50px
+    }
+    .rates-desclaimer{
+        p{
+            @include font-applying(16px, $font_text, normal, normal);
+            line-height: 28px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .desclaimer-modal {
+       .modal-dialog {
+           max-width: 600px;
+           margin: 1.75rem auto;
+        }
+    }
+ }  
+
+
+
+@media screen and (min-width: 768px) and (max-width: 870px) {
+    .business-content{
+        h1 {
+            font-size: 44px !important;
+            line-height: 54px !important;
+        }
+    }
+    .comertial-content{
+        h1 {
+            font-size: 38px !important;
+            line-height: 48px !important;
+        }
+    }
+    .bank-adress{
+        padding: 30px !important;
+
+        h3{
+            font-size: 44px !important;
+        }
+    }
+    .deposit-detail-widget .widget-inner{
+        padding: 20px;
+    }
+    .deposit-detail-widget .widget-inner h4{
+        font-size: 22px;
+    }
+    .deposit-details-wrap .desposit-detail-content .title h4{
+        font-size: 25px;   
+        line-height: 32px;
+    }
+    
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .bottom-banner{
+        height: 430px;
+    }
+    .top-info-wrap .top-info-image{
+        height: 400px;
+    }
+    .swap-img{
+        height: 320px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .business-content{
+        h1 {
+           font-size: 44px !important;
+           line-height: 54px !important;
+       }
+   }
+   .deposit-pros-wrap .despoit-pro-wrap-inner .deposit-item .deposit-item-inner{
+        padding: 20px;
+   }
+   .top-info-wrap .top-info-image{
+        height: 400px;
+   }
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .bottom-banner{
+        height: 430px;
+        .bottom-banner-content{
+            h2{
+                font-size: 38px !important;
+                line-height: 48px !important;
+            }
+            .learn-more {
+                margin-top: 20px;
+            }
+        }
+    }
+    .top-info-wrap .top-info-content h1{
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .rates-detail-wrap table caption{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .rates-detail-wrap table tbody tr td{
+        font-size: 11px;
+    }
+    .rates-detail-wrap table thead tr th{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .rates-detail-wrap {
+        padding: 40px 0px;
+    }
+    .rates-detail-wrap .rates-desclaimer p{
+        line-height: 22px;
+        font-size: 14px;
+    }
+    .top-info-wrap .top-info-image{
+        height: 300px;
+    }
+    .page-wrap {
+        padding: 10px 0px;
+    }
+    .top-info-wrap{
+        margin: 20px 0px;
+    }
+}
